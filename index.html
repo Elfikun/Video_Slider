@@ -15,12 +15,18 @@
             <source src="video_1.mp4" type="video/mp4">
         </video>
         <ul class="navigation">
-            <li><img src="thumb1.jpg"></li>
-            <li><img src="thumb2.jpg"></li>
-            <li><img src="thumb3.jpg"></li>
-            <li><img src="thumb4.jpg"></li>
+            <li onclick="videoUrl('video_1.mp4')"><img src="thumb1.jpg"></li>
+            <li onclick="videoUrl('video_2.mp4')"><img src="thumb2.jpg"></li>
+            <li onclick="videoUrl('video_3.mp4')"><img src="thumb3.jpg"></li>
+            <li onclick="videoUrl('video_4.mp4')"><img src="thumb4.jpg"></li>
         </ul>
     </section>
+
+    <script>
+        function videoUrl(hmmmmmm) {
+            document.getElementById("slider").src = hmmmmmm;
+        }
+    </script>
 </body>
 
 </html>
